@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toko Sepatu Keren</title>
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #e67e22;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80')
+        no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .btn {
+      background-color: #e67e22;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #cf711b;
+    }
+
+    .produk {
+      background-color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .produk h2 {
+      margin-bottom: 40px;
+      font-size: 36px;
+      color: #222;
+    }
+
+    .produk-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .produk-item {
+      background-color: #fafafa;
+      border-radius: 10px;
+      padding: 20px;
+      width: 30%;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .produk-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .produk-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .produk-item h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .produk-item p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #e67e22;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media(max-width: 900px) {
+      .produk-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .produk-item {
+        width: 80%;
+        margin-bottom: 30px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-shoe-prints"></i> SepatuStore</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Produk</a></li>
+          <li><a href="#">Tentang</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Sepatu Berkualitas untuk Semua</h2>
+      <p>Temukan sepatu terbaik dengan desain trendy dan nyaman.</p>
+      <a href="#produk" class="btn">Lihat Produk</a>
+    </div>
+  </section>
+
+  <section id="produk" class="produk">
+    <div class="container">
+      <h2><i class="fas fa-tags"></i> Koleksi Sepatu</h2>
+      <div class="produk-grid">
+        <div class="produk-item">
+          <img
+            src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?auto=format&fit=crop&w=600&q=80"
+            alt="Sepatu Sneakers"
+          />
+          <h3>Sepatu Sneakers Casual</h3>
+          <p>Rp 600.000</p>
+          <a href="#" class="btn">Beli Sekarang</a>
+        </div>
+        <div class="produk-item">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+            alt="Sepatu Formal"
+          />
+          <h3>Sepatu Formal Kulit</h3>
+          <p>Rp 1.200.000</p>
+          <a href="#" class="btn">Beli Sekarang</a>
+        </div>
+        <div class="produk-item">
+          <img
+            src="https://images.unsplash.com/photo-1528701800489-8a6b4c3b1f08?auto=format&fit=crop&w=600&q=80"
+            alt="Sepatu Sport"
+          />
+          <h3>Sepatu Sport Running</h3>
+          <p>Rp 850.000</p>
+          <a href="#" clas
